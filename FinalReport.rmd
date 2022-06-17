@@ -69,6 +69,7 @@ basicCC <- ggplot(dd2,aes(x=race,y=prcnt*100,fill=cappun))
 basicCC + geom_bar(stat="identity", position = "dodge")
 ```
 
+The plot shows that "white and "other" are more in favor toward the attitude of capitol punishment (cappun) than "black"."Black" seems to have more individuals opposing.
 
 
 ### Numerical Descriptive Results
@@ -86,6 +87,7 @@ rowPerc(table2)
 colPerc(table2)
 ```
 
+The table shows that white and other races are more in favor than opposed toward capitol punishment. The black race seems to have more individuals opposed than in favor.
 
 ## Inferential Results
 
@@ -103,11 +105,15 @@ fisher.test(table2)
 #fisherXY(mydata$race,mydata$cappun)
 ```
 
+The p-value for the Chi-squared test was 0.bunch of 0's 1 this quite small we reject the null hypothesis.
+
 ```{r}
 fisherXY(mydata$cappun,mydata$race)
 ```
  
 
 # Discussion and Conclusion
+
+We started with the question being is attitude toward capitol punishment independent of race. The answer is no. According to the data the "white" and "other" races have different views than "blacks". The "whites" and "other" races are in favor toward capital punishment. The "blacks" on the other hand had more individuals whom were opposed towards capitol punishment than in favor.
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
