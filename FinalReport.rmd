@@ -1,7 +1,7 @@
 ---
 title: "GSS challange"
-author: "Put your name here!"
-date: "put the date here"
+author: "Stephanie Bolanos"
+date: "Summer 2022"
 output: html_document
 ---
 
@@ -30,9 +30,15 @@ mydata <- na.omit(mydata)
 Is attitude toward capitol punishment (cappun) independent of race (race)?
 If not, then whose view differs from whom??
 
+$H_0$: Attitude toward capital punishment is not related to race
+
+$H_A$: Attitude toward capital punishment is dependent on race
+
 # Methods
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method. Discuss what data manipulations may be needed for example subsetting or other binning procedures and what sort of graphical displays and inferential tools will be used!-->
+
+Both race and cappun are categorical variable so the analysis technique is CAT~CAT; plot is a barplot, summary is a cross-table, inference is chi-squared test.
 
 # Results
 
